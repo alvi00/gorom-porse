@@ -218,6 +218,15 @@ export const updateWeather = function(lat,lon){
             "13d": "linear-gradient(180deg, #ffffff, #add8e6, #e0ffff, #b0c4de, #778899)", // snow_day
             "50d": "linear-gradient(180deg, #F0F0F0, #E6E6E6, #D9D9D9, #CCCCCC, #BFBFBF)", // mist_day
             // Add more mappings as needed for different weather conditions...
+            "01n": "linear-gradient(180deg, #87ceeb, #b0e0e6, #87cefa, #d3d3d3, #ffffff)", // clear_day
+            "02n": "linear-gradient(180deg, #87CEEB, #AFC8D8, #B0C4DE, #CED1D6, #D3D3D3, #E0E0E0, #F2F2F2, #FFFFFF)",// few_clouds_day
+            "03n": "linear-gradient(180deg, #D3D3D3, #C0C0C0, #DCDCDC, #F5F5F5, #FFFFFF)", // scattered_clouds_day
+            "04n": "linear-gradient(180deg, #D1D1D1, #B7B7B7, #A1A1A1, #878787, #6E6E6E)", // 04d
+            "09n": "linear-gradient(180deg, #4682B4, #778899, #708090, #2F4F4F, #696969)", // shower_rain_day
+            "10n": "linear-gradient(180deg, #778899, #708090, #2F4F4F, #696969, #4682B4)", // rain_day
+            "11n": "linear-gradient(180deg, #555555, #777777, #999999, #BBBBBB, #DDDDDD, #FFFFFF)", // thunderstorm_day
+            "13n": "linear-gradient(180deg, #ffffff, #add8e6, #e0ffff, #b0c4de, #778899)", // snow_day
+            "50n": "linear-gradient(180deg, #F0F0F0, #E6E6E6, #D9D9D9, #CCCCCC, #BFBFBF)", // mist_day
         };
         
         const body = document.querySelector("body");
