@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Primary meta tag-->
+    <title>Gorom Porse</title>
+    <meta name="title" content="Gorom Porse">
+    <meta name="description" content="Gorom Porse is a weather app made by Alvi">
+    <!--favicon-->
+
+    <link rel="shortcut icon" href="./logo-01.png" type="image/png">
+
+    <!--favicon ends-->
+    <!--Google Font link-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!--Google Font link ends-->
+
+    <!--custom css link-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--custom css link ends-->
+
+    <!--custom js link-->
+    <script src="./assets/js/app.js" type="module"></script>
+    <script src="./assets/js/route.js" type="module"></script>
+    <!--custom js link ends here-->
+
+
+</head>
+<body>
+    
+    <!-- Header starts here-->
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo-01.png" width="364" height="58" alt="logo">
+            </a>
+
+            <div class="search-view" data-search-view>
+                <div class="search-wrapper">
+                    <input type="search" name="search" placeholder="Search City..." autocomplete="off" class="search-field " data-search-field>
+
+                    <span class="m-icon leading-icon">search</span>
+                    <button class="icon-btn leading-icon has-state" aria-label="close search" data-search-toggler>
+                        <span class="m-icon">arrow_back</span>
+                    </button>
+                </div>
+
+                <div class="search-result" data-search-result></div>
+
+
+            </div>
+
+            <div class="header-actions">
+                <button class="icon-btn has-state" aria-label="open search" data-search-toggler>
+                    <span class="m-icon icon">search</span>
+                </button>
+                <a href="#/current-location" class="btn-primary has-state"data-current-locaton-btn>
+                    <span class="m-icon">my_location</span>
+                    <span class="span">Current Location</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+     <!-- Header ends  here-->
+
+
+
+
+    <!-- Main starts here-->
+     <main>
+
+        <article class="container" data-container>
+
+            <div class="content-left">
+                <!-- Current weather starts here-->
+                <section class="section current-weather" aria-label="current weather" data-current-weather>
+ </section>
+
+                <!--Forecast starts here-->
+
+                <section class="section forecast" aria-labelledby="forecast-label" data-5-day-forecast>
+                 
+                </section>
+            </div>
+
+
+
+            <div class="content-right">
+                <!--Highlights-->
+                
+                <section class="section highlights" aria-labelledby="highlights-label" data-highlights>
+
+                </section>
+
+
+                <!--HOURLY FORCAST-->
+
+                <section class="section hourly-forecast" aria-label="hourly forecast" data-hourly-forecast>
+               
+                </section>
+
+                
+            <!--footer-->
+            <footer class="footer">
+                <p class="body-3">
+                    Copyright 2024 ahmadfahmid. All Rights Reserved.
+                </p>
+
+                <p class="body-3">
+                    Powered By <a href="https://openweathermap.org/api" title="Free OpenWeatherMap API" target="_blank" rel="noopener">
+                        <img src="./assets/images/openweather.png" width="150" height="30" loading="lazy" alt="Openweather">
+                    </a>
+                </p>
+            </footer>
+
+
+            </div>
+
+
+            <div class="loading" data-loading>
+
+            </div>
+
+            <!-- current weather ends here -->
+        </article>
+     </main>
+     <!-- Main ends here-->
+
+
+     <!--Error 404-->
+     <section class="error-content" data-error-content>
+        <h2 class="heading">
+            404
+        </h2>
+
+        <p class="body-1">
+            Page Not Found!
+        </p>
+
+        <a href="#/weather?lat=23.7644025&lon=90.389015" class="btn-primary">
+            <span class="span">
+                Go Home
+            </span>
+        </a>
+     </section>
+</body>
+</html>
